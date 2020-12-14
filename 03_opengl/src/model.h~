@@ -1,0 +1,22 @@
+#ifndef __MODEL_H__
+#define __MODEL_H__
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+/**
+ * Définition des types
+ */
+typedef struct element {
+	void ** data;
+    int size;
+    int count;
+}element_t;
+
+
+
+void ElementAdd( element_t * v, void * data );
+bool Load(const char * filename,float * Mass, float * PosX, float  *PosZ, float  *VelX, float  *VelY, float  *VelZ);
+
+#endif // __MODEL_H__
