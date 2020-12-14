@@ -1,0 +1,20 @@
+CPU  :
+
+  03_opengl: 1- Sans Optimisation: 3 fps
+             2- Performance max (option de compilation -Ofast):  40 fps
+
+  05_openmp : Performance max : 160 fps
+
+GPU  :
+
+    cuda1:   Update acceleration in GPU/ Update Positions in CPU   ===> FPS: 160fps
+    cuda1-2: Update acceleration and positions in GPU ==============> FPS: 250fps
+
+    cuda2: Utilisation des float3 dans GPU (pour cst p[j].x/.y/.z) => FPS: 450fps
+
+    cuda3: Utilisation des float3/float4 dans GPU/CPU  =============> ça n'a rien affecté, il a même dégradé le FPS
+
+
+    cuda4: Shared Memory  =============> FPS: 900 fps
+
+    cuda5: Pinned Memory  =============> FPS: 1500 fps
