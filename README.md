@@ -4,7 +4,12 @@
 Ce module a pour but d’implémenter une application de calcul mathéma- tiques intensif sur un système embarqué (System On Chip). L’application choisie consiste à simuler le déplacement de deux galaxies en fonction de leur gravitation. Il s’agit de la collision entre la voie lactée "Milky Way" et Andromède "Andromeda" qui, selon les observations actuelles, se produira dans approximativement quatre milliards d’années entre les deux plus grandes galaxies du Groupe local. Pour ce faire, on dispose d’une base données listant les composants des deux galaxies, leurs positions, leurs masses et leurs vélocités.
 La carte de développement qui sera utilisé (Figure 1 )est une carte Nvi- dia Jetson K1 embarquant quatre coeurs de processeur Cortex A15 (architecture ARMv7) et 192 coeurs CUDA GK20A ainsi que 2GB de RAM.
 
-![alt text](img.png) 
+<p align="center">
+  <img src="img.PNG"
+       title="FPGA">
+       
+</p>
+<caption>**Figure 1 – Carte de développement NVIDIA Jetson TK1**</caption>
 
 Le développement s’eﬀectuera en plusieurs étapes. Tout d’abord une im- plémentation basique des algorithmes de calculs. Ensuite, on procédera à une opti- misation algorithmique concentré dans un premier temps sur le CPU puis dans un second temps sur l’utilisation du GPU. Aﬁn de réaliser ce projet, nous avons à notre disposition plusieurs librairies tel que SDL, OpenGL, OpenMP, CUDA, etc.
 
